@@ -1,0 +1,53 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #FFED00;
+    font-family: 'Permanent Marker', cursive;
+}
+.container {
+    height: 50vh;
+    position: relative;
+    
+   
+}
+
+.card {
+    position: relative;
+    height: 50vh;
+    flex: 1;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: flex .5s ease-in;
+    text-align: center;
+}
+.card.active {
+    flex: 5;
+}
+.cardBox {
+    display: flex;
+   
+}
+.heart {
+    flex: 5;
+}
+h1{
+    font-size: 5em;
+}
+h3 {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    opacity: 0;
+    font-size: 3em;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.card.active h3{
+    opacity: 1;
+}
